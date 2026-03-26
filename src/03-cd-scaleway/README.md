@@ -62,7 +62,7 @@ cat ~/.ssh/id_ed25519_formation
 Se connecter à l'instance et installer Docker :
 
 ```bash
-export INSTANCE_IP=<INSTANCE_IP>
+export INSTANCE_IP=151.115.85.193
 ssh -i ~/.ssh/id_ed25519_formation ubuntu@$INSTANCE_IP
 
 # Sur l'instance — ajouter le dépôt officiel Docker
