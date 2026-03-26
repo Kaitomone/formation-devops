@@ -9,9 +9,9 @@ describe('GET /api/health', () => {
     });
 });
 
-describe('POST /api/item', () => {
+describe('POST /api/items', () => {
     it('rejects empty name', async () => {
-        const res = await request(app).post('/api/item').send({ name: '' });
+        const res = await request(app).post('/api/items').send({ name: '' });
         expect(res.statusCode).toBe(400);
     });
 });
