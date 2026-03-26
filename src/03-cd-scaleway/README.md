@@ -153,11 +153,11 @@ git push origin main
 
 ```bash
 # Vérifier que l'application répond sur l'instance
-curl http://<INSTANCE_IP>/api/health
+curl http://$INSTANCE_IP/api/health
 # Réponse attendue : {"status":"ok","version":"<sha-du-commit>"}
 
 # Vérifier les conteneurs en cours d'exécution
-ssh -i ~/.ssh/id_ed25519_formation ubuntu@<INSTANCE_IP> "docker ps"
+ssh -i ~/.ssh/id_ed25519_formation ubuntu@$INSTANCE_IP "docker ps"
 ```
 
 ---
